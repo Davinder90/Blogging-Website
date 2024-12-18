@@ -1,0 +1,157 @@
+.post-container {
+    width: 100%;
+    text-decoration: none;
+    color: #000000eb;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.post-content-block {
+    width: 70%;
+}
+
+.author-block {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.author-block img {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-top : -1px;
+    /* border : 2px solid black; */
+}
+
+.author-name {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.75rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    /* text-2xl font-medium leading-7 line-clamp-3 sm:line-clamp-2; */
+}
+
+.des {
+    margin: 2px 0 15px 0;
+    font-size: 14px;
+    font-family: "Gelasio";
+    line-height: 1.75rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.activity-container {
+    display: flex;
+    gap: 20px;
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tags span {
+    background-color: gainsboro;
+    padding: 4px 10px;
+    border-radius: 25px;
+    font-size: 13px;
+}
+
+.like-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.post-content-block2 {
+    width: 30%;
+    /* border : 2px solid black; */
+}
+
+.post-content-block2 div {
+    float: right;
+    height: 120px;
+    width: 120px;
+}
+
+@media (max-width : 1100px) {
+    .des {
+        display: none;
+    }
+
+    .post-content-block2 div {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media (max-width : 900px) {
+    .des{
+        display : block;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+    }
+}
+
+@media (max-width : 700px) {
+    .des{
+        display : none;
+    }
+}
+
+
+@media (max-width : 550px) {
+    .post-container{
+        padding-bottom : 12px;
+        margin-bottom : 12px;
+    }
+
+    .title {
+        -webkit-line-clamp: 2;
+        font-size : 16px;
+    }
+
+    .post-content-block2 div {
+        height: 80px;
+        width: 80px;
+    }
+
+    .author-block{
+        margin-bottom : 8px;
+    }
+
+    .tags {
+        gap: 3px;
+    }
+    
+    .tags span {
+        padding: 3px 8px;
+        font-size: 11px;
+    }
+
+    .like-btn {
+        font-size : 14px;
+    }
+}

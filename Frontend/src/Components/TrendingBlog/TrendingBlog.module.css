@@ -1,0 +1,93 @@
+.post-container {
+    width: 100%;
+    text-decoration: none;
+    color: #000000eb;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.post-index{
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    color: #f6d8d5;
+    background-image: radial-gradient( #f6d8d5);
+    font-size: 40px;
+  }
+
+.post-index::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0em;
+    left: 0em;
+    color: #313f97;
+    z-index: -1;
+    transition: 0.2s;
+  }
+
+.post-index:hover::before{
+    top: 0.04em;
+    left: 0.04em;
+  }
+
+.post-index::after{
+    content: attr(data-text);
+    position: absolute;
+    color: transparent;
+    top: 0em;
+    left: 0em;
+    background-image: radial-gradient(rgba(236, 34, 37, 0.5) 0.0125em, transparent 0.0125em);
+    background-size: 8px 8px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-stroke: 1px #ec2225;
+    transition: 0.2s;
+  }
+
+.post-index:hover::after{
+    top: -0.04em;
+    left: -0.04em;
+  }
+
+
+  .author-block {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.author-block img {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-top : -1px;
+    /* border : 2px solid black; */
+}
+
+.author-name {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.75rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    /* text-2xl font-medium leading-7 line-clamp-3 sm:line-clamp-2; */
+}

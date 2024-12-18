@@ -1,0 +1,91 @@
+
+.comment-info{
+    padding : 12px 17px;
+    margin : 5px 0 5px 10px;
+    border-radius : 17px;
+    border : 1px solid rgba(128, 128, 128, 0.274);
+    position : relative;
+}
+
+.user-info{
+    display : flex;
+    gap : 8px;
+    align-items : center;
+    margin-bottom : 4px;
+}
+
+.comment{
+    font-family : "Galesio";
+    margin-left : 6px;
+    font-weight : 500;
+    font-size : 18px;
+}
+
+.reply-box{
+    position: relative;
+    margin : 15px 0 15px -2px;
+    display : flex;
+    /* gap : 100px; */
+    flex-direction : column;
+    /* align-items : center; */
+    /* justify-content : center; */
+}
+
+.sub-reply-box{
+    display : flex;
+    gap : 30px;
+    /* background-color : blue; */
+    /* border : 2px solid black; */
+}
+
+.reply-btn , .btn{
+    background : none;
+    border : none;
+    text-decoration : underline;
+    font-size : 14px;
+    font-family : sans-serif;
+    cursor: pointer;
+    font-weight : 550;
+}
+
+.sub-reply-box button span{
+    font-size : 16px;
+}
+
+.btn{
+    font-size : 13px;
+    font-weight : 500;
+    text-decoration : none;
+}
+
+.delete-btn{
+    position : absolute;
+    top : 15px;
+    right : 15px;
+    background : none;
+    border : 1px solid hsl(0, 0%, 50%,40%);
+    font-size : 16px;
+    padding : 2px 4px;
+    border-radius : 5px;
+    cursor : pointer;
+}
+
+.delete-btn:hover{
+    background-color : hsl(0, 100%, 50%,20%);
+    font-size : 17px;
+}
+
+.load-more-btn{
+    border : none;
+    padding : 4px 6px;
+    border-radius : 25px;
+    cursor : pointer;
+    background : white;
+}
+
+.load-more-btn:hover{
+    background : hsl(0, 0%, 50%,10%) ;
+}
+
+
+

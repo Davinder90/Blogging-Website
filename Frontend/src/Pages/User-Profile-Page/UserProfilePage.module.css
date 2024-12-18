@@ -1,0 +1,136 @@
+.container {
+    height: calc(100vh - 135px);
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+    padding : 0 40px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+}
+
+.profile-container-img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid gainsboro;
+    border-radius: 50px;
+}
+
+.profile-container h1 {
+    margin-top : 5px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.f-name {
+    font-size: 16px;
+    text-transform : capitalize;
+}
+
+.edit-pr-btn-container {
+    margin-bottom : 30px; 
+}
+
+.edit-pr-btn{
+    text-decoration : none;
+    color : black;
+    background : rgb(220, 220, 220,0.5);
+    padding : 7px 19px;
+    font-size : 16px;
+    border-radius : 13px; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+.blog-info-con{
+    display : flex;
+    gap : 30px;
+    margin-top : 5px;
+    margin-bottom : 20px;
+}
+
+.blog-info-con div{
+    font-size : 16px;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+}
+
+
+@media (max-width : 1100px) {
+    /* .container {
+        gap: 30px;
+    } */
+
+    .profile-container-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile-container h1 {
+        font-size: 20px;
+    }
+
+    .f-name {
+        font-size: 15px;
+    }
+}
+
+@media (max-width : 900px) {
+    .container{
+        padding : 0 30px;
+
+    }
+  
+    .profile-container-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .profile-container h1 {
+        font-size: 16px;
+    }
+
+    .f-name {
+        font-size: 14px;
+    }
+
+    .edit-pr-btn-container{
+        margin-bottom : 20px;
+    }
+}
+
+
+@media (max-width : 650px) {
+    .container {
+        flex-direction: column;
+        padding : 0 20px;
+        gap: 20px;
+    }
+
+    .profile-container{
+        align-items : center;
+    }
+
+    .profile-container-img {
+        margin-bottom : 5px;
+        width: 85px;
+        height: 85px;
+    }
+
+    .profile-container h1 {
+        font-size: 19px;
+    }
+
+    .f-name {
+        font-size: 16px;
+    }
+
+    .about-block{
+        display : none;
+    }
+}

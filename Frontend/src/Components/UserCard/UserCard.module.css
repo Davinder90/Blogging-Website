@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.777);
+    padding-bottom: 5px;
+    /* border-bottom: 1px solid gainsboro; */
+}
+
+.container img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50px;
+}
+
+.container h1 {
+    font-size: 17px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.container p {
+    font-size: 15px;
+}

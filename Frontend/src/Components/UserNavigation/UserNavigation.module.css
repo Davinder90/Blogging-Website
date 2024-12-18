@@ -1,0 +1,68 @@
+
+.user-nav-panel{
+    background : white;
+    border : 1px solid gray;
+    position : absolute;
+    right : 0;
+    top : 90px;
+    width : 170px;
+    transition : 200;
+}
+
+.write {
+    display : flex;
+    gap : 4px;
+    padding : 4px 0 4px 8px;
+    background-color : white;
+    color : #0000009d;
+    text-decoration : none;
+}
+
+.profile,.dash-b,.settings{
+    display : block;
+    font-size : 16px;
+    padding : 4px 0 4px 8px;
+    font-style : none;
+    color : #0000009d;
+    text-decoration : none;
+    background-color : white;
+}
+
+.log-out{
+    padding : 4px 0 4px 8px;
+    display : flex;
+    flex-direction : column;
+    cursor : pointer;
+}
+
+.log-out span{
+    font-size : 14px;
+    color : #0000009d;
+}
+
+.log-out span:first-child{
+    font-size : 16px;
+    color : rgba(0, 0, 0, 0.721);
+    font-weight : 560;
+}
+
+.write:hover,.profile:hover,.dash-b:hover,.settings:hover,.log-out:hover{
+    background : rgb(229, 227, 227); 
+}
+
+
+@media (max-width : 650px) {
+    .user-nav-panel{
+        width : 120px;
+    }
+    .write,.profile,.dash-b,.settings{
+        font-size : 12px;
+        padding : 3px 0 3px 6px;
+    }
+    .log-out span{
+        font-size : 11px;
+    }
+    .log-out span:first-child{
+        font-size : 13px;
+    }
+}

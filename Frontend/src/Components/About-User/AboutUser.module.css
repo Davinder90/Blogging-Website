@@ -1,0 +1,50 @@
+.container{
+}
+
+.bio{
+    line-height: 1.75rem; 
+    font-family : 500;
+}
+
+.social-links{
+    margin-top : 10px;
+    display : flex;
+    gap : 15px;
+    flex-wrap: wrap;
+}
+
+.link{
+    color : rgba(0, 0, 0, 0.663);
+    font-size : 20px;
+}
+
+.link:hover{
+    color : black;
+}
+
+.date{
+    color : rgba(0, 0, 0, 0.663);
+    line-height: 1.75rem; 
+    margin-top : 5px;
+}
+
+@media (max-width : 950px) {
+    .container{
+        width : 90%;
+    }
+
+    .social-links{
+        margin-top : 5px;
+        gap : 10px;
+    }
+
+    .link{
+        font-size : 17px;
+    }
+}
+/* 
+@media (max-width : 650px) {
+    .container{
+        display : none;
+    }
+} */

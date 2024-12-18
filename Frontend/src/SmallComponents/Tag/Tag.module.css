@@ -1,0 +1,45 @@
+
+.container{
+    position : relative;
+    display : inline-flex;
+    padding : 0 0 0 10px;
+    margin : 10px 0 0 10px;
+    background : white;
+    border-radius : 25px;
+    height : 38px;
+    justify-content : center;
+    align-items : center;
+    gap : 2px;
+}
+
+.container:hover{
+    opacity : 0.8;
+}
+
+.name{
+    outline : none;
+}
+
+.del{
+    padding-top : 5px;
+    border : none;
+    outline : none;
+    font-size : 26px;
+    background : none;
+    cursor : pointer;
+}
+
+@media (max-width : 900px) {
+    .container{
+        height : 30px;
+        gap : 1px;
+    }
+
+    .name{
+        font-size : 13px;
+    }
+
+    .del{
+        font-size : 20px;
+    }
+}

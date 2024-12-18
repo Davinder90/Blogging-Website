@@ -1,0 +1,77 @@
+.container{
+    margin-top : 12px;
+    width : 100%;
+    /* z-index : 3; */
+}
+
+.container hr{
+    border : 1px solid rgb(241, 241, 241);
+    margin : 8px 0;
+    width : 100%;
+}
+
+.sub-container-1{
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+}
+
+.btns-block{
+    display : flex;
+    gap : 28px;
+    align-items : center;
+}
+
+.btn-container{
+    display : flex;
+    align-items : center;
+    gap : 10px;
+}
+.btn-container button{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    border : none;
+    border-radius : 50px;
+    font-size : 18px;
+    height : 30px;
+    width : 30px;
+    cursor : pointer;
+}
+
+.nt-heart{
+    background-color : #f2f0f0;
+}
+
+.heart{
+    background-color : hsl(342, 90%, 52%, 20%);
+    color : hsl(342, 90%, 52%);
+}
+
+.btn-container p{
+    color : grey;
+    font-size : 16px;
+}
+
+.twitter-link{
+    font-size : 18px;
+    color : rgba(0, 0, 0, 0.806);
+}
+
+.twitter-link:hover{
+    color : rgb(0, 94, 255);
+}
+
+.edit-link{
+    color : black;
+}
+
+.edit-link:hover{
+    color : rgb(126, 0, 128);
+}
+
+@media (max-width : 650px) {
+    .container{
+        margin-top : 39px;
+    }
+}

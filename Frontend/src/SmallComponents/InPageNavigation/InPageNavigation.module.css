@@ -1,0 +1,31 @@
+.navs-container{
+    position : relative;
+    margin-bottom : 18px;
+    background : white;
+    border-bottom : 1px solid rgb(194, 194, 194);
+    /* overflow-x : auto; */
+    display : flex;
+    align-items : center;
+    flex-wrap : nowrap;
+    gap : 5px;
+    /* height : 60px; */
+    /* width : min-content; */
+}
+
+.nav-btn{
+    padding : 4px 5px;
+    text-transform : capitalize;
+    border : none;
+    outline : none;
+    background : white;
+    cursor : pointer;
+    font-size : 16px;
+    margin-bottom : 17px;
+}
+
+.navs-container hr{
+    position : absolute;
+    border : none;
+    border-top : 2px solid rgb(0, 0, 0);
+    bottom : 0;
+}

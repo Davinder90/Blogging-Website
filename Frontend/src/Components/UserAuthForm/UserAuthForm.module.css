@@ -1,0 +1,151 @@
+
+.container{
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    gap : 25px;
+    width : 40%;
+    margin : 70px auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height : 450px;
+}
+
+h1{
+    text-transform : capitalize;
+    font-size : 40px;
+    font-weight : 500;
+}
+
+.inputs{
+    display : flex;
+    flex-direction : column;
+    gap : 15px;
+}
+
+.google,.sign-up{
+    padding : 9px 22px;
+    font-size : 20px;
+    border-radius : 25px;
+    text-align : center;
+    border : none;
+    outline : none;
+    text-transform : capitalize;
+    font-weight : 500;
+    cursor : pointer;
+    background : black;
+    color : white;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    gap : 10px;
+}
+
+.google div{
+    margin-top : -25px;
+}
+
+.confirm-input{
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    gap : 20px;
+}
+
+.sign-google{
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
+    margin-bottom : 40px;
+    gap : 10px;
+}
+
+.google{
+    margin : 20px 0 10px 0;
+    padding : 12px 24px;
+}
+
+.google img{
+    height : 25px;
+}
+
+.sign-google p{
+    font-size : 22px;
+}
+
+@media (max-width : 1280px) {
+    .container{
+        gap : 15px;
+    }
+    h1{
+        font-size : 30px;
+    }
+    .google,.sign-up{
+        padding : 5px 15px;
+        font-size : 18px;
+        gap : 7px;
+    }
+    .google img{
+        height : 20px;
+    }
+    .sign-google p {
+        font-size : 18px;
+    }
+}
+
+@media (max-width : 1000px) {
+    .container{
+        width : 50%;
+        gap : 10px;
+        height : 410px;
+    }
+    .inputs{
+        gap : 8px;
+    }
+    .google,.sign-up{
+        font-size : 16px;
+    }
+    .google img{
+        height : 18px;
+    }
+    .sign-google p {
+        font-size : 16px;
+    }
+    .confirm-input{
+        gap : 10px;
+    }
+    .google{
+        margin-top : 10px;
+    }
+    .sign-google{
+        margin-bottom : 20px;
+    }
+
+    @media (max-width : 700px) {
+        .container{
+            width : 62%;
+        }
+    }
+
+    @media (max-width : 550px) {
+        h1{
+            font-size : 20px;
+        }
+        .container{
+            width : 65%;
+            height : 380px;
+        }
+        .google,.sign-up{
+            font-size : 14px;
+        }
+        .google img{
+            height : 16px;
+        }
+        .sign-google p {
+            font-size : 14px;
+            padding : 0px 8px;
+        }
+    }
+}

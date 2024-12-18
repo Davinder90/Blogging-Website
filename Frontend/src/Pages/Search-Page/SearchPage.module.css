@@ -1,0 +1,32 @@
+.search-blogs-block{
+    width : 60%;
+    height : 100vh;
+}
+
+.users-container{
+    width : 40%;
+    height : 100vh;
+    border-left : 1px solid rgb(197, 197, 197);
+    padding-left : 30px;
+    padding-top : 10px;
+}
+
+.users-container h1{
+    font-size : 18px;
+    font-weight : 500;
+}
+
+.users-container h1 span{
+    font-size : 16px;
+}
+
+
+@media (max-width : 650px) {
+    .search-blogs-block{
+        width : 100%;
+    }
+
+    .users-container{
+        display : none;
+    }
+}

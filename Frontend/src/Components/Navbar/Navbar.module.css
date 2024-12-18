@@ -1,0 +1,260 @@
+.container {
+    flex: 1;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    position: sticky;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    z-index: 9;
+    margin-bottom : 25px;
+}
+
+.nav-left {
+    display: flex;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-top : -1px;
+    height: 140px;
+}
+
+.logo-name {
+    font-size: 3.3rem;
+    font-weight: 600;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+}
+
+.input span {
+    font-size: 26px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.input input {
+    border: none;
+    outline: none;
+    color: black;
+    padding: 0 5px;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    width: 250px;
+    height: 40px;
+    font-size: 22px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+/* 
+.input input:focus 
+    width: 350px;
+    border-bottom: 2px solid black;
+} */
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-left : auto;
+}
+
+.write {
+    padding: 9px 22px;
+    font-size: 20px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    display : flex;
+    gap : 4px;
+    color: #666565;
+    background: rgba(224, 223, 223, 0.92);
+    text-transform: capitalize;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 500;
+    text-decoration : none;
+}
+
+.write:hover{
+    background: rgba(224, 223, 223, 0.5);
+}
+
+.notification-btn,.profile-logo{
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border : none;
+    outline : none;
+    cursor : pointer;
+}
+
+.profile-logo{
+    width : 40px;
+    height : 40px;
+}
+
+.profile-logo img{
+    margin-top : -2px;
+    width : 40px;
+    height : 40px;
+    border-radius : 50px;
+}
+
+.notification-btn span :first-child{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.notification-btn:hover{
+    background : #dcdadaab;
+}
+
+.user-block,.user-log {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    right: 40px;
+}
+
+@media (max-width : 1280px) {
+    .container {
+        height: 120px;
+    }
+
+    .nav-left {
+        gap: 25px;
+        width: 55%;
+    }
+
+    .logo {
+        height: 115px;
+    }
+
+    .logo-name {
+        font-size: 2.7rem;
+    }
+
+    .input input {
+        width: 210px;
+        font-size: 19px;
+    }
+
+    /* .input input:focus {
+        width: 280px;
+    } */
+
+    .input span {
+        font-size: 19px;
+    }
+
+    .nav-right {
+        gap: 7px;
+    }
+
+    .write{
+        padding: 6px 17px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width : 1040px) {
+    .logo {
+        height: 95px;
+    }
+
+    .logo-name {
+        font-size: 2.3rem;
+    }
+
+    .input input {
+        width: 180px;
+        font-size: 18px;
+    }
+
+    .input span {
+        font-size: 18px;
+    }
+
+    /* .input input:focus {
+        width: 260px;
+    } */
+}
+
+@media (max-width : 900px) {
+    .container {
+        height: 135px;
+    }
+
+    .nav-left {
+        position: absolute;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .logo-container {
+        height: 80px;
+    }
+
+    .input {
+        justify-content: center;
+    }
+
+    .write{
+        display : none;
+    }
+}
+
+@media (max-width : 650px) {
+    .logo {
+        height: 65px;
+    }
+
+    .logo-name {
+        font-size: 1.7rem;
+    }
+
+    .input{
+        margin-left : 20px;
+    }
+
+    .input input {
+        width: 160px;
+        font-size: 14px;
+    }
+
+    .input span {
+        font-size: 14px;
+    }
+
+    .notification-btn,.profile-logo,
+    .profile-logo img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .notification-btn span :first-child,
+    .profile-logo span:first-child {
+        font-size: 18px;
+    }
+}
+
+@media (max-width : 500px){
+    .user-block, .user-log{
+        flex-direction : column;
+        right : 10px;
+        gap : 8px;
+    }
+} 

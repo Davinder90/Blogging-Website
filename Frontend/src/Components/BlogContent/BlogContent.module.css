@@ -1,0 +1,59 @@
+img {
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.img-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-caption {
+    margin-top: 5px;
+    width: 90%;
+    text-align: center;
+    color: rgb(158, 158, 158);
+}
+
+.quote-container {
+    background-color: hsl(271, 76%, 53%, 10%);
+    border-left: 4px solid blueviolet;
+    padding: 6px 8px;
+    line-height: 2.5rem
+}
+
+.quote {
+    font-weight: 500;
+    margin-bottom : 10px;
+}
+
+.quote-caption {
+    color: blueviolet;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+ol{
+    display : flex;
+    flex-direction : column;
+    gap : 7px;
+}
+
+.list-dec{
+    list-style : decimal;
+}
+
+.list-cir{
+    list-style : circle;
+}
